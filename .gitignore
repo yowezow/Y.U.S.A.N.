@@ -1,0 +1,14 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+logs/
+build/
+node_modules/
+dist/
+target/
+apps/desktop/src-tauri/target/
+apps/desktop/src-tauri/binaries/yusan-core*
+.DS_Store
+Thumbs.db

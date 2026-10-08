@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Default capability set for the YUSAN desktop window.","local":true,"windows":["main"],"permissions":["core:default","core:window:allow-toggle-maximize","opener:default",{"identifier":"shell:allow-spawn","allow":[{"name":"binaries/yusan-core","sidecar":true}]},"shell:allow-kill"]}}

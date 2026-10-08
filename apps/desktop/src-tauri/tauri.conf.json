@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "YUSAN",
+  "version": "1.0.0",
+  "identifier": "com.yusan.desktop",
+  "build": {
+    "beforeDevCommand": "npm run core:build && npm run dev",
+    "beforeBuildCommand": "npm run core:build && npm run build",
+    "devUrl": "http://localhost:1420",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "YUSAN",
+        "width": 1240,
+        "height": 780,
+        "minWidth": 980,
+        "minHeight": 650,
+        "decorations": true,
+        "titleBarStyle": "Overlay",
+        "trafficLightPosition": { "x": 42, "y": 30 },
+        "resizable": true,
+        "maximizable": true,
+        "minimizable": true,
+        "closable": true,
+        "fullscreen": false,
+        "transparent": false,
+        "shadow": true
+      }
+    ],
+    "security": { "csp": null }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "externalBin": ["binaries/yusan-core"],
+    "icon": ["icons/32x32.png", "icons/128x128.png", "icons/128x128@2x.png", "icons/icon.icns", "icons/icon.ico"]
+  }
+}
